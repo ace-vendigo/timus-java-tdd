@@ -1,13 +1,12 @@
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.*;
-import java.util.StringTokenizer;
 
 import static org.junit.Assert.assertEquals;
 
 public class TestTemplate {
 
+    //Use test like this to check whether your program return right results for some input data.
     @Test
     public void test() throws IOException {
         String input = "";
