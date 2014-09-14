@@ -1,5 +1,9 @@
 import java.io.*;
-
+/* Task: Вычислите a+b
+        Исходные данные
+        a и b
+        Результат
+        a+b*/
 //Status: Accepted
 public class Problem1000 {
 
