@@ -4,8 +4,7 @@ public class Template {
 
     static class Solution {
         void solve() throws IOException {
-            //Вставте свій розв'язок в цьому методі. Використовуйте readLine, readInt and readDouble для зчитування
-            // та writer.print для виведення. Не забудьте викликати writer.flush в кінці.
+            //Put your solution here
             writer.flush();
         }
 
