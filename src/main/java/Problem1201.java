@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-//Status: WTF WA#1
+//Status: WA1
 public class Problem1201 {
 
     static class Solution {
@@ -49,7 +49,8 @@ public class Problem1201 {
                 //Remove spaces in the end
                 days[dN] = days[dN].trim();
                 //Output
-                writer.print(days[dN]+"\n");
+                String delimeter = dN<6?"\n":"";
+                writer.print(days[dN]+delimeter);
             }
 
             writer.flush();
@@ -63,19 +64,9 @@ public class Problem1201 {
             this.writer = writer;
         }
 
-        String readLine() throws IOException {
-            reader.nextToken();
-            return reader.sval;
-        }
-
         int readInt() throws IOException {
             reader.nextToken();
             return (int) reader.nval;
-        }
-
-        double readDouble() throws IOException {
-            reader.nextToken();
-            return (double) reader.nval;
         }
     }
 
