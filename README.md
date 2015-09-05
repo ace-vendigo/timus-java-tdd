@@ -1,4 +1,4 @@
 timus-java-tdd
 ==============
-В цьому проекті будуть зібрані розв'язки деяких задач з сайту acm.timus.ru на Java 1.8
-Кожна програма має структуру, що дозволяє застосовувати підхід TDD.
+Problems from acm.timus.ru solved on Java 1.8
+Programs have structure which allows use TDD approach.
