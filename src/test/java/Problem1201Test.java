@@ -4,7 +4,7 @@ import java.io.*;
 
 import static org.junit.Assert.assertEquals;
 
-public class TestProblem1201 {
+public class Problem1201Test {
     @Test
     public void testSolution1() throws IOException {
         String input = "16 3 2002";

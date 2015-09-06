@@ -4,28 +4,21 @@ import java.io.*;
 
 import static org.junit.Assert.assertEquals;
 
-public class TestProblem2012 {
+public class Problem1639Test {
+
     @Test
-    public void testSolution1() throws IOException {
-        String input = "7\n";
+    public void testFirst() throws IOException {
+        String input = "2 2";
         String actualOutput = runSolution(input);
-        String expectedOutput = "YES\n";
+        String expectedOutput = "[:=[first]";
         assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
-    public void testSolution2() throws IOException {
-        String input = "5\n";
+    public void testSecond() throws IOException {
+        String input = "1 3";
         String actualOutput = runSolution(input);
-        String expectedOutput = "NO\n";
-        assertEquals(expectedOutput, actualOutput);
-    }
-
-    @Test
-    public void testSolution3() throws IOException {
-        String input = "10\n";
-        String actualOutput = runSolution(input);
-        String expectedOutput = "YES\n";
+        String expectedOutput = "[second]=:]";
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -33,7 +26,7 @@ public class TestProblem2012 {
         StreamTokenizer st = new StreamTokenizer(new BufferedReader(new StringReader(input)));
         StringWriter sw = new StringWriter();
         PrintWriter pw = new PrintWriter(sw);
-        Problem2012.Solution sol = new Problem2012.Solution(st, pw);
+        Problem1639.Solution sol = new Problem1639.Solution(st, pw);
         sol.solve();
         return sw.toString();
     }

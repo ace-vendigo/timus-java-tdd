@@ -3,7 +3,8 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import static org.junit.Assert.assertEquals;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
 
 public class TestHelper {
 
@@ -17,6 +18,6 @@ public class TestHelper {
         Method solveMethod = solutionClass.getDeclaredMethod("solve");
         solveMethod.invoke(solutionObject);
 
-        assertEquals(sw.toString(), expectedOutput);
+        assertThat(sw.toString(), equalTo(expectedOutput));
     }
 }

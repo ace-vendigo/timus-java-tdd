@@ -24,20 +24,20 @@ public class Problem1313 {
     int size;
 
     public void solve() throws IOException {
-        int[][] matrix = readMatrix();
-        writeLine(matrix);
+        int[][] m = readMatrix();
+        writeLine(m);
         writer.flush();
     }
 
-    private void writeLine(int[][] matrix) {
+    private void writeLine(int[][] m) {
         int runCount = size * 2 - 1;
 
         for (int run = 0; run < runCount; run++) {
             int i = Math.min(run, size - 1);
-            int j = Math.max(run - size, 0);
+            int j = Math.max(run - size + 1, 0);
             int runLen = runLen(run);
             for (int pos = 0; pos < runLen; pos++) {
-                writer.print(matrix[i][j]);
+                writer.print(m[i][j]);
                 printSpace(run, runCount, pos, runLen);
                 i--;
                 j++;
@@ -46,16 +46,16 @@ public class Problem1313 {
     }
 
     private void printSpace(int run, int runCount, int pos, int runLen) {
-        if (run != runCount - 1 && pos != runLen - 1) {
+        if (run != runCount - 1 || pos != runLen - 1) {
             writer.print(" ");
         }
     }
 
     private int runLen(int run) {
-        if (run <= size) {
-            return run;
+        if (run < size) {
+            return run+1;
         } else {
-            return 2 * size - run;
+            return 2 * size - run - 1;
         }
     }
 
@@ -65,7 +65,7 @@ public class Problem1313 {
 
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
-                matrix[j][i] = readInt();
+                matrix[i][j] = readInt();
             }
         }
 

@@ -4,7 +4,7 @@ import java.io.*;
 
 import static org.junit.Assert.assertEquals;
 
-public class TestProblem2001 {
+public class Problem2001Test {
 
     @Test
     public void testSolution1() throws IOException {
