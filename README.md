@@ -15,3 +15,4 @@ Problems from [acm.timus.ru](http://acm.timus.ru/) solved on Java 1.8 and covere
 | [2023](http://acm.timus.ru/problem.aspx?space=1&num=2023)  | Дональд-почтальон  | Accepted   | 40 |
 | [2066](http://acm.timus.ru/problem.aspx?space=1&num=2066)  | Простое выражение   | Accepted   | 42 |
 | [1654](http://acm.timus.ru/problem.aspx?space=1&num=1654)  | Шифровка   | Time limit exceeded - 7   | 66 |
+| [1005](http://acm.timus.ru/problem.aspx?space=1&num=1005)  | Куча камней   | Wrong answer - 5   | 93 |
