@@ -1,0 +1,70 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+<head>
+    <link href="../concordion.css" rel="stylesheet" type="text/css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<div concordion:example="solution">
+    <h2 concordion:set="#problemName">1005. Stone Pile</h2>
+
+    <p>
+        You have a number of stones with known weights w1, …, wn. Write a program that will rearrange the stones into
+        two piles such that weight difference between the piles is minimal.
+    </p>
+
+    <h4>Input</h4>
+    <p>
+        Input contains the number of stones n (1 ≤ n ≤ 20) and weights of the stones w1, …, wn (integers, 1 ≤ wi ≤
+        100000) delimited by white spaces
+    </p>
+
+    <h4>Output</h4>
+    <p>
+        Your program should output a number representing the minimal possible weight difference between stone piles.
+    </p>
+
+    <h4>Samples</h4>
+    <table concordion:execute="#result = run(#problemName, #input)">
+        <tr>
+            <th concordion:set="#input">Input</th>
+            <th concordion:assert-equals="#result">Output</th>
+        </tr>
+        <tr>
+            <td>
+                5<br/>
+                5 8 13 27 14
+            </td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>
+                5<br/>
+                2 98 50 25 25
+            </td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>
+                4<br/>
+                100 100 100 1000
+            </td>
+            <td>700</td>
+        </tr>
+        <tr>
+            <td>
+                1<br/>
+                225
+            </td>
+            <td>225</td>
+        </tr>
+        <tr>
+            <td>
+                2<br/>
+                100 2
+            </td>
+            <td>98</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
